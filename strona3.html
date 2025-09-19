@@ -11,15 +11,18 @@
 <p>Imię: </p>
 <input type="text">
 <label for="nazwisko">Nazwisko: </label>
-<input type="text" name="nazwisko"><br><br>
+<input type="text" name="nazwisko" id="nazwisko" maxlength="10"><br><br>
 <label for="wiek">Wiek: </label>
-<input type="number" name="wiek"><br><br>
+<input type="number" name="wiek" min="0" max="150"><br><br>
 <label for="email">Email: </label>
 <input type="email" name="email"><br><br>
 <label for="haslo">Hasło: </label>
 <input type="password" name="haslo"><br><br>
 <label for="data">Data urodzenia: </label>
 <input type="date" name="data"><br><br>
+
+<input type="range" min="1" max="100" value="50" id="myRange">
+
 
 <input type="reset" value="Resetuj"><br><br>
 <input type="submit" value="Wyślij"><br><br>
