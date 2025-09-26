@@ -1,0 +1,36 @@
+h1{
+    text-align: center;
+    font-size: 3em;
+    font-weight: 2000;
+    font-style: italic;
+}
+
+h2{ 
+    margin: 50px 500px 150px 200px;
+    padding-top: 100px;
+    background-color: chocolate;
+    text-align: left;
+    font-size: 6em;
+    font-weight:bold;
+    font-style:normal;
+    text-decoration: underline dashed 2px;
+    text-shadow: 10px 20px 15px rgb(0, 0, 0);
+    transform: rotate(-90deg);
+    
+
+    color: rgb(134, 226, 43);
+
+}
+
+p{
+    text-align: justify;
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Tahoma;
+    color: rgb(57, 0, 201);
+}
