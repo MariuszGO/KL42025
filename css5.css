@@ -1,0 +1,80 @@
+H1{
+    color: red;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+p{
+    color: green;
+    font-size: 14px;   
+}
+
+.klasa p{
+    color: rgb(0, 72, 255);
+    font-size: 18px;   
+}
+
+.klasa{
+    color: rgb(0, 72, 255);
+    font-size: 18px;   
+}
+
+
+.klasa:hover{
+    color: rgb(230, 0, 255);
+    font-size: 20px;   
+}
+
+
+img:hover{
+  
+    border: 10px solid rgb(206, 80, 80);
+    border-radius: 20px;
+}
+
+img:active{
+  
+    border: 10px solid rgb(80, 206, 80);
+    border-radius: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    border: 2px solid greenyellow;
+    border-radius:  5px;
+    background-color: chocolate;
+    margin-right: 30px;
+
+}
+
+a:hover{
+    text-decoration: none;
+    color: blue;
+    background-color: cyan;
+    margin-right: 30px;
+}
+
+a:active{
+    text-decoration: none;
+    color: red;
+    margin-right: 30px;
+}
+
+a:visited{
+    text-decoration: none;
+    color: rgb(62, 128, 0);
+margin-right: 30px;
+}
+
+a:focus{
+    text-decoration: none;
+    color: orange;
+    margin-right: 30px;
+}
+
+
+
+*{
+    background-color: lightslategray;
+}
