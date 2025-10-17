@@ -78,3 +78,8 @@ a:focus{
 *{
     background-color: lightslategray;
 }
+
+.zdjecie{
+   background-image: url(sam.jpg);
+   
+}
