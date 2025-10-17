@@ -9,27 +9,34 @@ header{
     background-color: lightblue;
     
 }
-nav{
-    width: 100%;
+#nav1{
+    float: left;
+    width: 50%;
+    height: 100px;
+    background-color: rgb(0, 134, 0);
+}
+#nav2{
+    float: left;
+    width: 50%;
     height: 100px;
     background-color: lightgreen;
 }
-section{
+main{
     float: left;
     height: 300px;
-    width: 60%;
+    width: 25%;
     background-color: lightcoral;
 }
 article{
     float: left;
     height: 300px;
-    width: 60%;    
+    width: 50%;    
     background-color: lightgoldenrodyellow;
 }
 aside{
-    float: right;
-    height: 600px;
-    width: 40%;
+    float: left;
+    height: 300px;
+    width: 25%;
     background-color: lightgray;
 }
 footer{
@@ -54,3 +61,20 @@ footer{
     border: 10px solid rgb(0, 0, 0);
     border-radius: 10px;   
 }
+
+section{
+    float: left;
+    height: 100px;
+    width: 100%;    
+}
+
+#id1{
+    background-color: yellow;
+}
+#id2{
+    background-color: orange;
+}
+#id3{
+    background-color: red;
+}
+
