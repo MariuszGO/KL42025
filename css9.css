@@ -18,7 +18,7 @@ header{
 
 main{
     display: flex;
-    background-color: lightgrey;
+    background-color: rgba(13, 0, 191, 0.489);
     flex-direction: row;
 }
 
@@ -40,7 +40,6 @@ nav{
     margin: 5px;
 }
 #nav3{
-    
     background-color: lightcyan;    
     margin: 5px;
 }
@@ -57,12 +56,12 @@ article{
     background-color: white;    
     margin: 5px;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
 
 }
 
 #art1, #art2, #art3, #art4, #art5, #art6{
-    background-color: lightgray;    
+    background-color: lightgray;
     width: 45%;
     height: 100px;
     margin: 5px;
