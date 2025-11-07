@@ -1,6 +1,6 @@
 *{
     float: none;
-    width: 90%;
+    width: 98%;
     margin: auto;
     padding: auto;
     box-sizing: border-box;
@@ -9,7 +9,10 @@
 }
 
 body{
-   margin-top: 100px;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   border: 1px solid black;
+    height: auto;
 }
 
 header{
@@ -65,7 +68,7 @@ footer{
 .samochod{
     width: 200px;      
     margin: 20px;
-    border: 2px solid black;
+    border: 1px solid black;
     border-radius: 10px;   
 }
 
@@ -88,9 +91,10 @@ section{
     border: 2px solid black;
     margin: 10px;
     border-radius: 10px;   
-    width: 28%;
+    width: 150px;
     height: 150px;
     background-image: url("sam.jpg");
+    background-repeat: no-repeat;
 }
 
 .m{
