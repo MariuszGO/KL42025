@@ -21,10 +21,28 @@
         echo $zmienna3 . "<br>";
         echo $zmienna4 . "<br>";
         echo $zmienna5 . "<br>";
-        echo $zmienna6 . "<br>";
+        echo @$zmienna6 . "<br>"; //Wyświetlenie niezainicjowanej zmiennej (użycie @ aby uniknąć ostrzeżenia).
         echo $zmienna7[2] . "<br>"; //Wyświetlenie trzeciego elementu tablicy (indeksy zaczynają się od 0).
 
+        $wynik = $zmienna1 + $zmienna2; //Operacja dodawania zmiennych.
+        echo "Wynik dodawania: " . $wynik . "<br>";
+        /* + sumowanie 
+           - odejmowanie 
+           * mnożenie 
+           / dzielenie 
+           % modulo (reszta z dzielenia) */
+
+           $liczba_a = 8;
+           $liczba_b = 3;
+           $wynik = $liczba_a % $liczba_b;
+           echo "Wynik modulo: " . $wynik . "<br>";
+
+
         
+
+
+
+
     
             /*
             Komentarz wieloliniowy
