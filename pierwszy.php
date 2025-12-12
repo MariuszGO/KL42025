@@ -37,8 +37,12 @@
            $wynik = $liczba_a % $liczba_b;
            echo "Wynik modulo: " . $wynik . "<br>";
 
-
+            $tekst1 = "Witaj, ";
+            $tekst2 = "świecie!";
+            $rok = 2025;
+            $tekst_polaczony = $tekst1 . $tekst2 . " Mamy rok:" . $rok; //Łączenie
         
+            echo $tekst_polaczony . "<br>";
 
 
 
