@@ -40,9 +40,12 @@
             $tekst1 = "Witaj, ";
             $tekst2 = "świecie!";
             $rok = 2025;
-            $tekst_polaczony = $tekst1 . $tekst2 . " Mamy rok:" . $rok; //Łączenie
+            $tekst_polaczony = $tekst1 . $tekst2 . " Mamy rok: " . $rok . " " . $zmienna7[2]; //Łączenie (konkatenacja) łańcuchów tekstowych. Stary sposób.
+            $tekst_polaczony_drugi_sposob = "$tekst1 $tekst2 Mamy rok: $rok $zmienna7[2]"; //Interpolacja nowoczesny sposób.
+
         
             echo $tekst_polaczony . "<br>";
+            echo $tekst_polaczony_drugi_sposob . "<br>";
 
 
 

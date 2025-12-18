@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    background: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.box {
+    flex: 1;
+    background: #eee;
+    padding: 30px;
+    text-align: center;
+}
+img{
+    width: 500px;
+    height: auto;
+    display: block;
+}
+
+.zdjecie{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+footer {
+    background: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .box {
+        background: #ddd;
+    }
+}
