@@ -78,13 +78,13 @@ footer {
 
 
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     nav {
         height: auto;
     }
 
     nav .nav-list {
-        flex-direction: column;   /* MENU PIONOWE */
+        flex-direction: column;   
         align-items: center;
         gap: 10px;
         margin: 10px;
@@ -109,4 +109,4 @@ footer {
     .box {
         background: #ddd;
     }
-}
+} */
