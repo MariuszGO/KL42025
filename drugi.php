@@ -43,8 +43,10 @@
             echo "<p>Liczba $liczba3 jest większa od 10 i mniejsza od 20.</p>";
         }
 
+
+
         //Instrukcja switch
-        $dzien_tygodnia = 6;
+        $dzien_tygodnia = 13;
         switch($dzien_tygodnia) {
             case 1:
                 echo "<p>Dzisiaj jest poniedziałek.</p>";
@@ -102,6 +104,73 @@
                 echo "<p>Podałeś wartość spoza zakresu.</p>";
             }
 
+            // && logiczny i 
+            // || logiczny lub
+            // ! negacja
+            
+            $a = true;
+            $b = false;
+
+            if($a && $b) {              
+                echo "<p>Obie zmienne są prawdziwe.</p>";
+            }
+            else {
+                echo "<p>Przynajmniej jedna ze zmiennych jest fałszywa.</p>";
+            }
+
+            if($a || $b) {
+                echo "<p>Przynajmniej jedna ze zmiennych jest prawdziwa.</p>";
+            }
+            else {
+                echo "<p>Obie zmienne są fałszywe.</p>";
+            }
+
+            if(!$b) {
+                echo "<p>Zmienna b jest fałszywa.</p>";
+            }
+            else {
+                echo "<p>Zmienna b jest prawdziwa.</p>";
+            }
+              echo "<h1>Przykłady pętli</h1>";
+echo "<hr>";
+          
+        //Pętle
+        //Pętla while
+        //Warunek w petli while sprawdzany jest na początku. Jeśli warunek jest fałszywy, pętla nie wykona się ani razu.
+        //Jeżeli warunek jest prawdziwy, pętla wykona się tak długo, aż warunek stanie się fałszywy.
+        $i = 1;
+        echo "<h2>Pętla while</h2>";
+        while($i <= 5) {
+            echo "<p>Wartość i wynosi: $i</p>";
+            $i++; //inkrementacja $i=$i + 1
+                    }
+
+        //Pętla do-while
+        //Warunek w pętli do-while sprawdzany jest na końcu. Oznacza to, że pętla wykona się przynajmniej raz, 
+        //nawet jeśli warunek jest fałszywy. Taka jest różnica między pętlą while a do-while. Należy to zapamiętać.!!!  
+        $j = 1;
+        echo "<h2>Pętla do-while</h2>";
+        do {
+            echo "<p>Wartość j wynosi: $j</p>";
+            $j++;
+        } while($j <= 5);
+
+            echo "<hr>";
+            echo "<h1>Przykład z warunkiem fałszywym</h1>";
+        //Wersja z warunkiem fałszywym
+            $i = 1;
+        echo "<h2>Pętla while</h2>";
+        while($i >= 5) {
+            echo "<p>Wartość i wynosi: $i</p>";
+            $i++; //inkrementacja $i=$i + 1
+                    }
+
+         $j = 1;
+        echo "<h2>Pętla do-while</h2>";
+        do {
+            echo "<p>Wartość j wynosi: $j</p>";
+            $j++;
+        } while($j >= 5);
 
         ?>
 </body>
