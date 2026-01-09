@@ -72,11 +72,35 @@
                 echo "<p>Dzisiaj jest niedziela.</p>";
                 break;
             default:
+                echo "<p>Podałeś wartość spoza zakresu.</p>"; 
+                break;
+            }
+
+            //to samo na if-elseif-else
+            if($dzien_tygodnia == 1) {
+                echo "<p>Dzisiaj jest poniedziałek.</p>";
+            }   
+            elseif($dzien_tygodnia == 2) {
+                echo "<p>Dzisiaj jest wtorek.</p>";
+            }
+            elseif($dzien_tygodnia == 3) {
+                echo "<p>Dzisiaj jest środa.</p>";
+            }
+            elseif($dzien_tygodnia == 4) {
+                echo "<p>Dzisiaj jest czwartek.</p>";
+            }
+            elseif($dzien_tygodnia == 5) {
+                echo "<p>Dzisiaj jest piątek.</p>";
+            }
+            elseif($dzien_tygodnia == 6) {
+                echo "<p>Dzisiaj jest sobota.</p>";
+            }
+            elseif($dzien_tygodnia == 7) {
+                echo "<p>Dzisiaj jest niedziela.</p>";
+            }
+            else {
                 echo "<p>Podałeś wartość spoza zakresu.</p>";
-        }
-
-
-
+            }
 
 
         ?>
