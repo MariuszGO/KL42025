@@ -171,7 +171,20 @@ echo "<hr>";
             echo "<p>Wartość j wynosi: $j</p>";
             $j++;
         } while($j >= 5);
+echo "<hr>";
+        //Pętla for
+        echo "<h2>Pętla for</h2>";  
+        for($k = 1; $k <= 5; $k++) {
+            echo "<p>Wartość k wynosi: $k</p>";
+        }
+
+        echo "<h2>Pętla for co 3</h2>";
+        for($i=0; $i<100; $i+=3) {
+            echo "<p>Wartość i wynosi: $i</p>";
+        }
 
         ?>
+
+        
 </body>
 </html>
