@@ -16,11 +16,17 @@ do{
     $i=$i+2;     // $i+=2;
 }while($i<=100);
 
+echo "<H2>I ma wartosc  $i</H2>";
+
+$i=0;
+echo "<H2>I ma wartosc  $i</H2>";
 echo "<H1> PĘTLA WHILE </H1>";
 while($i<=100){
 
-
-
+    if($i % 2 == 0){
+                    echo "<p>$i</p>";
+                    }
+    $i++;   // altrernatywny zapis $i=$i+1   lub $i+=1;
 }
 
 
