@@ -44,7 +44,26 @@ $tablica = array(124,466,344,233,894,343,111,222,567);
 
 echo "<H1> PĘTLA FOREACH (do obsługi tablic) </H1>";
 foreach($tablica as $klucz){
-    echo "<p>$klucz</p>";
+    echo "<p>$klucz";
+    if($klucz % 2 == 0){ 
+        echo " To jest liczba parzysta";
+        }
+        else{
+       echo " To jest liczba nie parzysta</p>";
+            
+        }
+}
+echo "<hr>";
+
+for($i=0; $i<sizeof($tablica);$i++){   //sizeof liczy ile jest elementów w tablicy
+        echo "<p>$tablica[$i]";
+    if($tablica[$i] % 2 == 0){ 
+        echo " To jest liczba parzysta";
+        }
+        else{
+       echo " To jest liczba nie parzysta</p>";
+            
+        }
 }
 
 
