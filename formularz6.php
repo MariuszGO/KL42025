@@ -11,6 +11,14 @@
 $ile = $_POST['ilosc'];
 echo "<p>Z formularza została przesłana liczba: $ile </p>";
 
+
+/*
+Pobrane wartości minumum i maksimum mają być wykorzystane do losowania
+Skrpt ma wyświeltać zadaną ilość liczb losowych od minimum do maksimum
+Używamy funkcji random
+*/
+
+
 for($a=$ile;$a>=0;$a--){
     echo "<p> $a </p>";
 }
