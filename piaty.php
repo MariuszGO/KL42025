@@ -53,7 +53,24 @@ foreach($tablica as $klucz){
             
         }
 }
+echo '****************';
 echo "<hr>";
+
+
+echo "<H1> PĘTLA FOREACH (do obsługi tablic)  dodatkowo index</H1>";
+foreach($tablica as $index => $wartosc){
+    echo "<p>$wartosc";
+    if($wartosc % 2 == 0){ 
+        echo " To jest liczba parzysta i ma index $index";
+        }
+        else{
+       echo " To jest liczba nie parzysta</p>";
+            
+        }
+}
+echo "<hr>";
+
+
 
 for($i=0; $i<sizeof($tablica);$i++){   //sizeof liczy ile jest elementów w tablicy
         echo "<p>$tablica[$i]";
@@ -66,6 +83,23 @@ for($i=0; $i<sizeof($tablica);$i++){   //sizeof liczy ile jest elementów w tabl
         }
 }
 
+
+$samochody[0] = "Audi";
+$samochody[1] = "VW";
+$samochody[2] = "Fiat";
+$samochody[3] = "Ford";
+$samochody[4] = "Opel";
+
+foreach($samochody as $war){
+    echo "<H4>$war</H4>";
+}
+echo "<hr>";
+for($i=0; $i<sizeof($samochody);$i++){
+    echo "<H4>$samochody[$i]</H4>";
+}
+
+
+echo "Samochód o ineksie nr 2 czli 3 element tablicy to $samochody[2]";
 
 
 
