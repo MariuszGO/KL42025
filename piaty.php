@@ -1,3 +1,4 @@
+<!-- https://technikprogramista.pl/kurs/php/lekcja/php-operacje-na-zmiennych/ -->
 <!DOCTYPE html>
 <html lang="pl-PL">
 <head>
