@@ -9,11 +9,13 @@
 
 <form>
     <label for="imie">Imie:</label>
-    <input type="text" id="imie" name="imie"><br>
+    <input type="text" id="imie" name="imie" value="JAN"><br>
     <label for="naz">Nazwisko:</label>
-    <input type="text" id="naz" name="nazwisko"><br>
+    <input type="text" id="naz" name="nazwisko" value="KOWALSKI"><br>
     <label for="Wiek">Wiek:</label>
-    <input type="number" min="0" max="150" id="wiek" name="w"><br>
+    <input type="number" min="0" max="150" id="wiek" name="w" value="22"><br>
+    <label for="test"> To jest test</label>
+    <input type="checkbox" name="ch1" id="test" value="wartosc1">
     <button>Wyślij</button>
 </form>
 
@@ -25,6 +27,10 @@
     $nasze_imie = @$_GET['imie'];
     $nazwisko = @$_GET['nazwisko'];
     $wiek = @$_GET['w'];
+
+    $ch1 = @$_GET['ch1'];
+
+    echo "Wrtość ch1 to : $ch1";
 
     //Sprawdzanie czy imię, nazwisko, wiek są ustawione i nie są puste
     if (isset($nasze_imie) && isset($nazwisko) && isset($wiek) && $nasze_imie!="" && $nazwisko!="" && $wiek != ""){
