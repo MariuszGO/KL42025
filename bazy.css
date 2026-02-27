@@ -30,6 +30,7 @@ section{
 
 li{
     display: inline;
+    margin-left: 10px;
 }
 
 li a{
@@ -51,4 +52,14 @@ form{
 }
 input{
     margin: 5px;
+    border-radius: 3px;
+    box-shadow: 2px 2px 3px rgb(145, 136, 136);
+}
+
+input[type="submit"]:hover{
+    background-color: gray;
+}
+
+input[type="text"]:hover, input[type="number"]:hover {
+    background-color: rgb(230, 255, 206);
 }
