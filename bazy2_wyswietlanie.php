@@ -36,7 +36,11 @@
         $mod = $wiersz['model'];
         $c = $wiersz['cena'];
   
-      echo "<tr><td>$marka</td><td>$mod</td><td>$c</td></tr>";
+      echo "<tr>
+             <td>$marka</td>
+             <td>$mod</td>
+             <td>$c</td>
+            </tr>";
  
      }
 
