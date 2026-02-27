@@ -3,15 +3,19 @@ th,td{
     
 }
 tr th{
-    background-color: rgb(64, 28, 161);
+    background-color: rgb(141, 79, 9);
 }
-
+table{
+    margin:10px;
+    text-align: center;
+    
+}
 
 tr:nth-child(odd){
-    background-color: rgb(97, 189, 176);
+    background-color: rgb(241, 187, 68);
 }
 tr:nth-child(even){
-    background-color: rgb(158, 103, 30);
+    background-color: rgb(180, 141, 11);
 }
 header{
     width: 100%;
