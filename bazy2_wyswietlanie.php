@@ -18,7 +18,11 @@
  //$wynik = mysqli_query($polaczenie,"Select * from pojazdy"); //to samo co wyżej w inny sposób
  
  echo "<table>";
- echo "<tr><th>Marka</th><th>Model</th><th>Cena</th></tr>";
+ echo "<tr>
+        <th>Marka</th>
+        <th>Model</th>
+        <th>Cena</th>
+       </tr>";
 
  // Sposób 1
 //   while($wiersz = mysqli_fetch_array($wynik)){
