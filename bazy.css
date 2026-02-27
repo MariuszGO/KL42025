@@ -2,3 +2,15 @@ th,td{
     border: 1px solid black;
     
 }
+tr th{
+    background-color: rgb(64, 28, 161);
+}
+
+
+tr:nth-child(odd){
+    background-color: rgb(97, 189, 176);
+}
+tr:nth-child(even){
+    background-color: rgb(158, 103, 30);
+}
+

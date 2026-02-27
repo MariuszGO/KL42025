@@ -46,7 +46,7 @@
 
 
     echo "</table>";
- 
+ mysqli_close($polaczenie);
  ?>
     
 </body>
