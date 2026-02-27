@@ -8,7 +8,16 @@
 
 </head>
 <body>
-
+<header>
+<ul>
+    <li>
+        <a href="bazy2_formularz.html">Dodaj nowy pojazd</a>
+    </li>
+        <li>
+        <a href="bazy2_wyswietlanie.php">Wyświetl dane</a>
+    </li>
+</header>
+<section>
 <?php
 
  $polaczenie = mysqli_connect("localhost","root","","samochody");
@@ -48,6 +57,7 @@
     echo "</table>";
  mysqli_close($polaczenie);
  ?>
-    
+   
+</section>
 </body>
 </html>

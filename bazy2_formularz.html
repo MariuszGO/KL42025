@@ -3,9 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="bazy.css">
     <title>Formularz</title>
 </head>
 <body>
+<header>
+<ul>
+    <li>
+        <a href="bazy2_formularz.html">Dodaj nowy pojazd</a>
+    </li>
+        <li>
+        <a href="bazy2_wyswietlanie.php">Wyświetl dane</a>
+    </li>
+</header>
+<section>
+
 <form action="bazy2_wstawianie.php" method="post">
 <label for="marka">Marka</label>
 <input type="text" name="marka" id="marka"><br> 
@@ -15,6 +27,6 @@
 <input type="number" name="cena" id="cena"><br>
 <input type="submit" value="Wyślij">
 </form>
-    
+    </section>
 </body>
 </html>

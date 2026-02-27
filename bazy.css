@@ -13,4 +13,38 @@ tr:nth-child(odd){
 tr:nth-child(even){
     background-color: rgb(158, 103, 30);
 }
+header{
+    width: 100%;
+    background-color: antiquewhite;
+    float: left;
+}
+section{
+    width: 100%;
+    background-color: burlywood;
+    float: left;
+}
 
+li{
+    display: inline;
+}
+
+li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    background-color: chocolate;
+    border-radius: 5px;
+    padding: 5px;
+}
+li a:hover{
+    box-shadow: 5px 5px 10px rgb(0, 0, 0);
+    opacity: 0.8;
+
+}
+
+form{
+    text-align: center;
+    padding: 20px;
+}
+input{
+    margin: 5px;
+}
