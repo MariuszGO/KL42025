@@ -31,6 +31,8 @@
         <th>Marka</th>
         <th>Model</th>
         <th>Cena</th>
+        <th>Edycja</th>
+        <th>Usuń</th>
        </tr>";
 
  // Sposób 1
