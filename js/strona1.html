@@ -19,6 +19,7 @@
     <button type="button" onclick="pokaz_dane()">Wyświetl</button>
 
 </form>
+    <button type="button" onclick="zmien()">zmien kolory</button>
 
 <H1 id="dane"></H1>
 
@@ -28,6 +29,16 @@
         let nazwisko_dane = document.getElementById("naz").value;
         document.getElementById("dane").innerHTML = "Witaj " + imie_dane + " " + nazwisko_dane; 
     }
+
+
+   function zmien(){
+    let tytul = document.getElementById("tytul");
+
+    tytul.style.color = "#A534CC";
+    tytul.style.backgroundColor = "lightgrey";
+    tytul.style.fontSize = "50px";
+    tytul.style.textAlign="center";
+   }
 </script>
 
 </body>
