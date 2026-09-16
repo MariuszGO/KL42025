@@ -4,32 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pierwsza strona z JS</title>
+    <script src="strona1.js"></script>
 </head>
 <body>
 <H1 id="tytul">To jest mój tytuł</H1>
-    
 <button onclick="zmien_tytul()">Zmień</button>
 
+<br>
+<form>
+    <label for="imie">Imie:</label>
+    <input type="text" id="imie">
+    <label for="naz">Nazwisko:</label>
+    <input type="text" id="naz">
+    <button type="button" onclick="pokaz_dane()">Wyświetl</button>
+
+</form>
+
+<H1 id="dane"></H1>
 
 <script>
-let zmienna = 500;
-let zmienna2 = "JAN";
-let zmienna3 = true;
-alert("Witaj Świecie " + zmienna2);
-
-function zmien_tytul(){
-   document.getElementById("tytul").innerHTML = "Dzień dobry " + zmienna2;
-
-   //to jest to samo : 
-   //let tyt = document.getElementById("tytul");
-   //tyt.innerHTML = "Dzień dobry " + zmienna2;
-
-
-    
-
-}
-
-
+    function pokaz_dane(){
+        let imie_dane = document.getElementById("imie").value;
+        let nazwisko_dane = document.getElementById("naz").value;
+        document.getElementById("dane").innerHTML = "Witaj " + imie_dane + " " + nazwisko_dane; 
+    }
 </script>
+
 </body>
 </html>
