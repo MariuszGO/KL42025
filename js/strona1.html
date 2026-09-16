@@ -10,18 +10,21 @@
 <H1 id="tytul">To jest mój tytuł</H1>
 <button onclick="zmien_tytul()">Zmień</button>
 
-<br>
+<br><br>
 <form>
     <label for="imie">Imie:</label>
-    <input type="text" id="imie">
+    <input type="text" id="imie"><br>
     <label for="naz">Nazwisko:</label>
-    <input type="text" id="naz">
+    <input type="text" id="naz"><br>
     <button type="button" onclick="pokaz_dane()">Wyświetl</button>
 
 </form>
+<br>
+<br>
     <button type="button" onclick="zmien()">zmien kolory</button>
+    <button type="button" onclick="zmien1()">zmien kolory1</button>
+<H1 id="dane"></H1><br>
 
-<H1 id="dane"></H1>
 
 <script>
     function pokaz_dane(){
@@ -43,6 +46,21 @@
     tytul.margin = "auto";
     tytul.fontFamily = "Arial";
    }
+
+
+      function zmien1(){
+    let tytul = document.querySelector("h1").style;
+
+    tytul.color = "#A5223C";
+    tytul.backgroundColor = "lightgreen";
+    tytul.fontSize = "90px";
+    tytul.textAlign="center";
+    tytul.boxShadow= "10px 10px 100px"
+    tytul.width = "30%";
+    tytul.margin = "auto";
+    tytul.fontFamily = "Arial";
+   }
+
 
 
 </script>
