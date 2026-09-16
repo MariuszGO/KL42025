@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pierwsza strona z JS</title>
+</head>
+<body>
+<H1 id="tytul">To jest mój tytuł</H1>
+    
+<button onclick="zmien_tytul()">Zmień</button>
+
+
+<script>
+let zmienna = 500;
+let zmienna2 = "JAN";
+let zmienna3 = true;
+alert("Witaj Świecie " + zmienna2);
+
+function zmien_tytul(){
+    document.getElementById("tytul").innerHTML = "Dzień dobry " + zmienna2;
+    
+}
+
+
+</script>
+</body>
+</html>
