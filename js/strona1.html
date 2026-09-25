@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pierwsza strona z JS</title>
+    <script src="strona1.js"></script>
+</head>
+<body>
+<H1 id="tytul">To jest mój tytuł</H1>
+<button onclick="zmien_tytul()">Zmień</button>
+
+<br><br>
+<form>
+    <label for="imie">Imie:</label>
+    <input type="text" id="imie"><br>
+    <label for="naz">Nazwisko:</label>
+    <input type="text" id="naz"><br>
+    <button type="button" onclick="pokaz_dane()">Wyświetl</button>
+
+</form>
+<br>
+<br>
+    <button type="button" onclick="zmien()">zmien kolory</button>
+    <button type="button" onclick="zmien1()">zmien kolory1</button>
+<H1 id="dane"></H1><br>
+
+
+<script>
+    function pokaz_dane(){
+        let imie_dane = document.getElementById("imie").value;
+        let nazwisko_dane = document.getElementById("naz").value;
+        document.getElementById("dane").innerHTML = "Witaj " + imie_dane + " " + nazwisko_dane; 
+    }
+
+
+   function zmien(){
+    let tytul = document.getElementById("tytul").style;
+
+    tytul.color = "#A534CC";
+    tytul.backgroundColor = "lightgrey";
+    tytul.fontSize = "50px";
+    tytul.textAlign="center";
+    tytul.boxShadow= "5px 5px 5px"
+    tytul.width = "30%";
+    tytul.margin = "auto";
+    tytul.fontFamily = "Arial";
+   }
+
+
+      function zmien1(){
+    let tytul = document.querySelector("h1").style;
+
+    tytul.color = "#A5223C";
+    tytul.backgroundColor = "lightgreen";
+    tytul.fontSize = "90px";
+    tytul.textAlign="center";
+    tytul.boxShadow= "10px 10px 100px"
+    tytul.width = "30%";
+    tytul.margin = "auto";
+    tytul.fontFamily = "Arial";
+   }
+
+
+
+</script>
+
+</body>
+</html>
