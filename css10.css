@@ -1,0 +1,43 @@
+main{
+   
+    display: flex;
+    flex-direction: row;
+}
+
+article{
+    width: 33%;
+    background-color: blueviolet;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 20px;
+    border-radius: 20px;
+
+}
+
+#art2{
+    display: flex;
+    flex-direction: column;
+    width: 34%;
+    background-color: rgb(9, 55, 156);
+    align-items: center;
+    
+}
+
+#art1{
+    background-color: chartreuse;
+}
+
+.bloki{
+    width: 80%;
+    height: 100px;
+    background-color: darkkhaki;
+    margin: 5px;
+    border: 2px solid white;
+    border-radius: 10px;
+    box-shadow: 20px 10px 10px rgba(255,255, 255, 0.5);
+
+}
+
+.bloki:hover{
+    background-color: rgb(17, 184, 11);
+    box-shadow: 25px 15px 10px rgba(255,255, 255, 0.8);
+}

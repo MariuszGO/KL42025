@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>4. Sprawdzanie hasła</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        max-width: 800px;
+        margin: 40px auto;
+        padding: 20px;
+        background: #f5f5f5;
+        color: #222;
+    }
+    .box {
+        background: white;
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    }
+    input, select, button {
+        padding: 8px 10px;
+        margin: 6px 0;
+        font-size: 16px;
+    }
+    button {
+        cursor: pointer;
+    }
+    .wynik {
+        font-weight: bold;
+        margin-top: 15px;
+    }
+    a {
+        color: #1f5fbf;
+    }
+</style>
+
+</head>
+<body>
+<div class="box">
+<h1>4. Sprawdzanie długości hasła</h1>
+
+<label for="haslo">Hasło:</label>
+<input type="password" id="haslo">
+
+<p id="komunikat"></p>
+
+<script>
+const haslo = document.getElementById("haslo");
+const komunikat = document.getElementById("komunikat");
+
+haslo.addEventListener("input", function() {
+    let dlugosc = haslo.value.length;
+
+    if (dlugosc < 6) {
+        komunikat.textContent = "Hasło za krótkie";
+        komunikat.style.color = "red";
+    } else if (dlugosc < 10) {
+        komunikat.textContent = "Hasło średniej długości";
+        komunikat.style.color = "orange";
+    } else {
+        komunikat.textContent = "Dobre hasło";
+        komunikat.style.color = "green";
+    }
+});
+</script>
+</div>
+</body>
+</html>

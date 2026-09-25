@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>9. Licznik kliknięć</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        max-width: 800px;
+        margin: 40px auto;
+        padding: 20px;
+        background: #f5f5f5;
+        color: #222;
+    }
+    .box {
+        background: white;
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    }
+    input, select, button {
+        padding: 8px 10px;
+        margin: 6px 0;
+        font-size: 16px;
+    }
+    button {
+        cursor: pointer;
+    }
+    .wynik {
+        font-weight: bold;
+        margin-top: 15px;
+    }
+    a {
+        color: #1f5fbf;
+    }
+</style>
+
+</head>
+<body>
+<div class="box">
+<h1>9. Licznik kliknięć</h1>
+
+<p class="wynik">Wartość: <span id="licznik">0</span></p>
+
+<button id="plus">+1</button>
+<button id="minus">-1</button>
+<button id="reset">Reset</button>
+
+<script>
+let wartosc = 0;
+
+const licznik = document.getElementById("licznik");
+const plus = document.getElementById("plus");
+const minus = document.getElementById("minus");
+const reset = document.getElementById("reset");
+
+plus.addEventListener("click", function() {
+    wartosc++;
+    licznik.textContent = wartosc;
+});
+
+minus.addEventListener("click", function() {
+    wartosc--;
+    licznik.textContent = wartosc;
+});
+
+reset.addEventListener("click", function() {
+    wartosc = 0;
+    licznik.textContent = wartosc;
+});
+</script>
+</div>
+</body>
+</html>

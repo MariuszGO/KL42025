@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>10. Losowanie liczby</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        max-width: 800px;
+        margin: 40px auto;
+        padding: 20px;
+        background: #f5f5f5;
+        color: #222;
+    }
+    .box {
+        background: white;
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    }
+    input, select, button {
+        padding: 8px 10px;
+        margin: 6px 0;
+        font-size: 16px;
+    }
+    button {
+        cursor: pointer;
+    }
+    .wynik {
+        font-weight: bold;
+        margin-top: 15px;
+    }
+    a {
+        color: #1f5fbf;
+    }
+</style>
+
+</head>
+<body>
+<div class="box">
+<h1>10. Losowanie liczby</h1>
+
+<button id="losuj">Losuj liczbę od 1 do 10</button>
+
+<p class="wynik">Wylosowano: <span id="wynik">-</span></p>
+
+<script>
+const losuj = document.getElementById("losuj");
+const wynik = document.getElementById("wynik");
+
+losuj.addEventListener("click", function() {
+    let liczba = Math.floor(Math.random() * 10) + 1;
+    wynik.textContent = liczba;
+});
+</script>
+</div>
+</body>
+</html>

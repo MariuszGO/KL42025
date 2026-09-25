@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>6. Kalkulator ceny</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        max-width: 800px;
+        margin: 40px auto;
+        padding: 20px;
+        background: #f5f5f5;
+        color: #222;
+    }
+    .box {
+        background: white;
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    }
+    input, select, button {
+        padding: 8px 10px;
+        margin: 6px 0;
+        font-size: 16px;
+    }
+    button {
+        cursor: pointer;
+    }
+    .wynik {
+        font-weight: bold;
+        margin-top: 15px;
+    }
+    a {
+        color: #1f5fbf;
+    }
+</style>
+
+</head>
+<body>
+<div class="box">
+<h1>6. Kalkulator ceny</h1>
+
+<label>Cena produktu:</label>
+<input type="number" id="cena" step="0.01">
+
+<br>
+
+<label>Ilość:</label>
+<input type="number" id="ilosc" min="0">
+
+<p class="wynik">Razem: <span id="wynik">0.00</span> zł</p>
+
+<script>
+const cena = document.getElementById("cena");
+const ilosc = document.getElementById("ilosc");
+const wynik = document.getElementById("wynik");
+
+function oblicz() {
+    let c = Number(cena.value);
+    let i = Number(ilosc.value);
+
+    wynik.textContent = (c * i).toFixed(2);
+}
+
+cena.addEventListener("input", oblicz);
+ilosc.addEventListener("input", oblicz);
+</script>
+</div>
+</body>
+</html>

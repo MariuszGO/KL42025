@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>8. Zmiana koloru strony</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        max-width: 800px;
+        margin: 40px auto;
+        padding: 20px;
+        background: #f5f5f5;
+        color: #222;
+    }
+    .box {
+        background: white;
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    }
+    input, select, button {
+        padding: 8px 10px;
+        margin: 6px 0;
+        font-size: 16px;
+    }
+    button {
+        cursor: pointer;
+    }
+    .wynik {
+        font-weight: bold;
+        margin-top: 15px;
+    }
+    a {
+        color: #1f5fbf;
+    }
+</style>
+
+</head>
+<body>
+<div class="box">
+<h1>8. Zmiana koloru strony</h1>
+
+<label for="kolor">Wybierz kolor:</label>
+<select id="kolor">
+    <option value="white">Biały</option>
+    <option value="lightblue">Niebieski</option>
+    <option value="lightgreen">Zielony</option>
+    <option value="lightyellow">Żółty</option>
+    <option value="pink">Różowy</option>
+</select>
+
+<script>
+const kolor = document.getElementById("kolor");
+
+kolor.addEventListener("change", function() {
+    document.body.style.backgroundColor = kolor.value;
+});
+</script>
+</div>
+</body>
+</html>
