@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>1. Walidacja imienia</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        max-width: 800px;
+        margin: 40px auto;
+        padding: 20px;
+        background: #f5f5f5;
+        color: #222;
+    }
+    .box {
+        background: white;
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    }
+    input, select, button {
+        padding: 8px 10px;
+        margin: 6px 0;
+        font-size: 16px;
+    }
+    button {
+        cursor: pointer;
+    }
+    .wynik {
+        font-weight: bold;
+        margin-top: 15px;
+    }
+    a {
+        color: #1f5fbf;
+    }
+</style>
+
+</head>
+<body>
+<div class="box">
+<h1>1. Walidacja imienia</h1>
+<p>Jeśli imię ma mniej niż 3 znaki, pole będzie czerwone. W przeciwnym razie zielone.</p>
+
+<label for="imie">Imię:</label>
+<input type="text" id="imie">
+<p id="komunikat"></p>
+
+<script>
+const imie = document.getElementById("imie");
+const komunikat = document.getElementById("komunikat");
+
+imie.addEventListener("input", function() {
+    if (imie.value.length < 3) {
+        imie.style.backgroundColor = "lightcoral";
+        komunikat.textContent = "Imię jest za krótkie!";
+    } else {
+        imie.style.backgroundColor = "lightgreen";
+        komunikat.textContent = "Imię jest poprawne.";
+    }
+});
+</script>
+</div>
+</body>
+</html>

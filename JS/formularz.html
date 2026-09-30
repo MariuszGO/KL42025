@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Walidacja imienia</title>
+</head>
+
+<body>
+
+<form>
+    <label for="imie">Imię:</label>
+    <input type="text" id="imie">
+
+    <p id="komunikat"></p>
+</form>
+
+<script>
+    const imie = document.getElementById("imie");
+    const komunikat = document.getElementById("komunikat");
+
+    imie.addEventListener("input", function() {
+
+        if (imie.value.length < 3) {
+            imie.style.backgroundColor = "lightcoral";
+            komunikat.textContent = "Imię jest za krótkie!";
+        } else {
+            imie.style.backgroundColor = "lightgreen";
+            komunikat.textContent = "Imię jest poprawne.";
+        }
+
+    });
+
+
+
+    
+</script>
+
+</body>
+</html>

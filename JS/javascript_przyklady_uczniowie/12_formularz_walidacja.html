@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>12. Walidacja formularza</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        max-width: 800px;
+        margin: 40px auto;
+        padding: 20px;
+        background: #f5f5f5;
+        color: #222;
+    }
+    .box {
+        background: white;
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    }
+    input, select, button {
+        padding: 8px 10px;
+        margin: 6px 0;
+        font-size: 16px;
+    }
+    button {
+        cursor: pointer;
+    }
+    .wynik {
+        font-weight: bold;
+        margin-top: 15px;
+    }
+    a {
+        color: #1f5fbf;
+    }
+</style>
+
+</head>
+<body>
+<div class="box">
+<h1>12. Prosta walidacja formularza</h1>
+
+<label>Imię:</label>
+<input type="text" id="imie">
+
+<br>
+
+<label>Wiek:</label>
+<input type="number" id="wiek">
+
+<br>
+
+<label>Hasło:</label>
+<input type="password" id="haslo">
+
+<p id="komunikat"></p>
+
+<script>
+const imie = document.getElementById("imie");
+const wiek = document.getElementById("wiek");
+const haslo = document.getElementById("haslo");
+const komunikat = document.getElementById("komunikat");
+
+function sprawdz() {
+    if (imie.value.length < 3) {
+        komunikat.textContent = "Imię jest za krótkie.";
+        komunikat.style.color = "red";
+    } else if (Number(wiek.value) < 18) {
+        komunikat.textContent = "Użytkownik musi mieć co najmniej 18 lat.";
+        komunikat.style.color = "red";
+    } else if (haslo.value.length < 8) {
+        komunikat.textContent = "Hasło musi mieć co najmniej 8 znaków.";
+        komunikat.style.color = "red";
+    } else {
+        komunikat.textContent = "Formularz wypełniony poprawnie.";
+        komunikat.style.color = "green";
+    }
+}
+
+imie.addEventListener("input", sprawdz);
+wiek.addEventListener("input", sprawdz);
+haslo.addEventListener("input", sprawdz);
+</script>
+</div>
+</body>
+</html>
