@@ -8,12 +8,15 @@ function zmien_tytul(){
 
     console.log("Zmienna a ma wartość: " + a); //console.log  do testów
 
+    // innerHTML gdy dodajemy znaczniki HTML
+    // innerText gdy dodajemy zwykły tekst
+    
     if( a == false){
         document.getElementById("tytul").innerHTML = "Dzień dobry " + zmienna2;
         a = true;
     }else
     {
-        document.getElementById("tytul").innerHTML = "Witaj " + zmienna2 + " " + zmienna;
+        document.getElementById("tytul").innerText = "Witaj " + zmienna2 + " " + zmienna;
         a = false;
     }
 
