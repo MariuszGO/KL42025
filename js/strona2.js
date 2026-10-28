@@ -15,11 +15,16 @@ function wyswietlHaslo(){
 
     if(nasze_haslo < 6 )
         {
-        document.getElementById("haslo").style.backgroundColor = "lightred";
+            let wielkosc = "33px";
+
+        document.getElementById("haslo").style.backgroundColor = "red";
+        document.getElementById("haslo").style.fontSize = wielkosc;
         }
         else
             {
-               document.getElementById("haslo").style.backgroundColor = "lightgreen"; 
+               let wielkosc1 = nasze_haslo + "px";
+               document.getElementById("haslo").style.backgroundColor = "lightgreen";
+               document.getElementById("haslo").style.fontSize = wielkosc1; 
             }   
 
 
