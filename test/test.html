@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang='pl'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>TEST</title>
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+    <H1 id="tytul" style="border: dotted 1px black;">TYTUŁ STRONY <span>!!!!!</span></span></H1>
+    <button onclick="kolor()">Zmiana stylu</button>
+    <p id="n1"></p>
+    <button onclick="wstaw()">Dodaj tekst</button>
+
+    
+        <label for="imie">Podaj imie: </label>
+        <input type="text" id="imie" disabled>
+        <button onclick="wyswietl()">Wyświetl</button>
+        <button onclick="aktywacja()">Aktywacja</button>
+        <button onclick="aktywacja1()">Zmiana zdjęcia</button>
+ 
+    <H1 id="n_imie"></H1>
+
+    <img src="1.jpg" alt="Samochod" id="zdjecie">
+    <button onclick="zmien()">Zmien</button>
+    <button onclick="ukryj()">Ukryj</button>
+    <button onclick="pokaz()">Pokaz</button>
+       
+       
+    <ul>
+        <li>el1</li>
+        <li>el2</li>
+        <li>el2    <ol>
+                <li>ob1</li>
+            </ol>
+         
+        </li>
+
+
+    </ul>
+       
+       <script>
+    function wstaw(){
+        document.getElementById('n1').innerText = "TEST1";
+    }
+
+    function wyswietl(){
+        let nasze_imie = document.getElementById('imie').value;
+        console.log(nasze_imie);
+
+        document.getElementById('n_imie').innerText = nasze_imie;
+    }
+
+    function aktywacja(){
+      let zm =  document.getElementById('imie').disabled = false;
+     
+    }
+ let zm =  document.getElementById('imie').disabled;
+      
+ function aktywacja1(){
+     
+      
+if (zm == true){
+        document.getElementById('imie').disabled = false;
+        zm = false;
+      }else{
+        document.getElementById('imie').disabled = true;
+        zm = true;
+      }
+        
+         console.log(zm);
+    }
+
+ function zmien(){
+        let zdj = document.getElementById('zdjecie');
+        
+        zdj.src = "2.jpg";
+        console.log(zdj);
+    }
+
+    function kolor(){
+        let t = document.getElementById('tytul');
+
+        t.style.color = "red";
+        t.style.fontSize = "50px";
+        t.style.textAlign = "center";
+    }
+
+    function ukryj(){
+        document.getElementById('zdjecie').style.display = 'none';
+    }
+
+     function pokaz(){
+        document.getElementById('zdjecie').style.display = 'block';
+    }
+
+ </script> 
+    
+</body>
+</html>

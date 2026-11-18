@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang='pl-PL'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Ukrywanie elementów na stronie</title>
+    <link rel='stylesheet' href='ukrywanie.css'>
+    
+
+</head>
+<body>
+
+    <main id="strona">
+    
+    <img id="zdjecie" src="sam.jpg">
+
+
+    <button onclick="ukryj()">Ukryj</button>
+    <button onclick="pokaz()">Pokaz</button>
+    <button onclick="dodaj()">Dodaj</button>
+
+    </main>
+
+
+<script>
+       function ukryj(){
+        document.getElementById("zdjecie").style.display = "none";
+
+        }
+        function pokaz(){
+            document.getElementById("zdjecie").style.display = "block";
+        }
+
+       function dodaj(){
+            miejsce = document.getElementById("strona");
+
+            nowe_zdjecie = document.createElement("img");
+            nowe_zdjecie.src="sam2.jpg";
+            nowe_zdjecie.alt="NOWE";
+            miejsce.appendChild(nowe_zdjecie);
+            
+            link = document.createElement("a");
+            link.href= "http:\\google.pl";
+            link.textContent ="google.pl";
+            link.id ="pierwsze";
+            link.target ="_blank";
+            miejsce.appendChild(link);
+        }
+ 
+   </script>
+</body>
+</html>
