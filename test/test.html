@@ -27,7 +27,7 @@
     <button onclick="zmien()">Zmien</button>
     <button onclick="ukryj()">Ukryj</button>
     <button onclick="pokaz()">Pokaz</button>
-       
+     <p>INNy tekst</p>  
        
     <ul>
         <li>el1</li>
@@ -42,6 +42,12 @@
     </ul>
        
        <script>
+        const paragrafy = document.getElementsByTagName('p');
+
+            for (let i = 0; i < paragrafy.length; i++) {
+                        paragrafy[i].style.color = "blue";
+                        }
+
     function wstaw(){
         document.getElementById('n1').innerText = "TEST1";
     }
